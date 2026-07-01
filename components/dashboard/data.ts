@@ -1,29 +1,31 @@
+import { assetUrl } from "@/components/dashboard/asset-url"
+
 export const projects = [
   {
     title: "Fastfetch config",
     desc: "Custom Fastfetch configuration for Windows and Linux featuring Houshou Marine ANSI artwork.",
-    image: "/terminal-vscode.png",
+    image: assetUrl("terminal-vscode.png"),
     tags: ["ANSI_ART", "TUI", "OSS"],
     status: "OSS",
   },
   {
     title: "Under Construction",
     desc: "testing.",
-    image: "/underconstruction.gif",
+    image: assetUrl("underconstruction.gif"),
     tags: ["Some", "-", "Thing"],
     status: "WIP",
   },/*
   {
     title: "title",
     desc: "desc.",
-    image: "/image.png",
+    image: assetUrl("image.png"),
     tags: ["tags", "tags", "tags"],
     status: "WIP",
   },
   {
     title: "Vault Collection",
     desc: "Mobile-first app to track, tag and organize a personal collection.",
-    image: "/proj-mobile.png",
+    image: assetUrl("proj-mobile.png"),
     tags: ["Next.js", "Postgres", "PWA"],
     status: "LIVE",
   },*/

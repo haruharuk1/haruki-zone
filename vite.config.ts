@@ -5,6 +5,7 @@ import { fileURLToPath, URL } from "node:url"
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base:'/haruki-zone/',
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./", import.meta.url)),

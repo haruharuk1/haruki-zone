@@ -1,5 +1,6 @@
 import { Mail, Pause, Play, SkipBack, SkipForward } from "lucide-react"
 import { DiscordIcon, GithubIcon } from "@/components/brand-icons"
+import { assetUrl } from "@/components/dashboard/asset-url"
 import { skills } from "@/components/dashboard/data"
 import { PanelTitle } from "@/components/dashboard/panel-title"
 
@@ -12,7 +13,7 @@ export function AboutPanel() {
           Computer Engineering student. I love building things, automating stuff, and creating projects that solve
           problems or are just fun. Currently exploring game dev, backend systems and cloud.
         </p>
-        <img src="/senshou.jpg" alt="Haruki avatar" className="h-28 w-full rounded border border-primary object-cover" />
+        <img src={assetUrl("senshou.jpg")} alt="Haruki avatar" className="h-28 w-full rounded border border-primary object-cover" />
       </div>
     </section>
   )
@@ -79,7 +80,7 @@ export function StatusPanel() {
           <p>&gt; Repeat.</p>
         </div>
         <img
-          src="/hololive-houshou-marine.gif"
+          src={assetUrl("hololive-houshou-marine.gif")}
           alt="Houshou Marine"
           className="h-30 w-30 shrink-0 object-contain"
         />
@@ -93,7 +94,7 @@ export function NowPlayingPanel() {
     <section className="panel-shadow rounded-md border border-border bg-card">
       <PanelTitle>Now Playing</PanelTitle>
       <div className="flex items-center gap-4 p-4">
-        <img src="/mazari.jpg" alt="Now playing cover" className="h-20 w-20 rounded border border-primary object-cover" />
+        <img src={assetUrl("mazari.jpg")} alt="Now playing cover" className="h-20 w-20 rounded border border-primary object-cover" />
         <div className="min-w-0 flex-1">
           <p className="truncate font-display text-xl font-bold uppercase">ひとりかくれんぼ</p>
           <p className="truncate font-mono text-xs text-muted-foreground">Mazari</p>

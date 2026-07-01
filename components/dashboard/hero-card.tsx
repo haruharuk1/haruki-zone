@@ -1,5 +1,6 @@
 import { Activity, AlertTriangle, Cpu, MapPin } from "lucide-react"
 import type { ReactNode } from "react"
+import { assetUrl } from "@/components/dashboard/asset-url"
 import { Barcode, Tag } from "@/components/primitives"
 
 export function HeroCard() {
@@ -50,7 +51,7 @@ export function HeroCard() {
             <p className="font-display text-xl font-bold uppercase text-primary">Developer Profile</p>
           </div>
           <img
-            src="/senshou2.jpg"
+            src={assetUrl("senshou2.jpg")}
             alt="Haruki profile artwork"
             className="absolute inset-0 h-full w-full object-cover"
             crossOrigin="anonymous"

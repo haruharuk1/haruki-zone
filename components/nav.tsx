@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
+import { assetUrl } from "@/components/dashboard/asset-url"
 import { cn } from "@/lib/utils"
 
 const links = [
@@ -17,7 +18,7 @@ export function Nav() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-[1540px] items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <a href="#hero" className="flex min-w-0 items-center gap-3">
-          <img src="/cats2.svg" alt="" className="h-12 w-12 shrink-0" />
+          <img src={assetUrl("cats2.svg")} alt="" className="h-12 w-12 shrink-0" />
           <span className="min-w-0">
             <span className="block font-display text-3xl font-bold uppercase leading-none text-foreground">
               Haruki-<span className="text-primary">zone</span>
